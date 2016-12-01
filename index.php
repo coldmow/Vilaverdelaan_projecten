@@ -10,10 +10,11 @@
 	
 	<div class="registreer">
 		<label for="">Gebruikersnaam</label>
-		<input type="text">
+		<input type="text" class="GebN">
 		<br>
 		<label for="">Wachtwoord</label>
-		<input type="text">
+		<input type="text" class="WW">
+		<input type="button" name="" value="">
 	</div>
 	
 	
@@ -21,6 +22,8 @@
 
 	?>
 	<script>
+		GebN	=	document.querySelector(".GebN");
+		WW 		=	document.querySelector(".WW");
 
 		function newUser(gebruikersnaam,wachtwoord){
 			this.usernames = [];
@@ -30,7 +33,6 @@
 			};
 		}
 
-		document.querySelector("selectors: DOMString")
 	</script>
 </body>
 

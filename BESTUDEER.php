@@ -2,23 +2,26 @@
  
 
 abstract class User 
-//"abstract" zorgt ervoor dat je deze class niet uitsluitend op kunt roepen.
+//"abstract" zorgt ervoor dat je deze class niet uitsluitend op kunt roepen. Je moet met deze hoofdklasse de  die hierin zitten oproepen.
 {
      
     private $username = "";
      
     public $password = "";
- 
+//geb. naam en ww variabelen worden geinitialiseerd.
      
     public function __construct($username, $password)
+//Wat doet een construct?
     {
         $this->setUsername($username);
         $this->setPassword($password);
+//setUsername? setPassword? Wat gebeurt er hierboven? Hoe wordt dit gebruikt/aangeroepen?
     }
      
     public function getUsername()
     {
         return $this->username;
+
     }
      
     public function setUsername($username)
@@ -64,4 +67,7 @@ echo $anna->password;
  
 //$anna->password = password_hash('legend32', PASSWORD_DEFAULT);
 $anna->setPassword('legend32');
+
+
+
 ?>
